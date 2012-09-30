@@ -1,5 +1,5 @@
 class GramsController < ApplicationController
   def index
-    @venues = Media.recent
+    @venues = Media.recent(Venue.new.ids)
   end
 end
