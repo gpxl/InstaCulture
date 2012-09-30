@@ -7,6 +7,7 @@
 # Ignore bundler config
 /.bundle
 /.pow*
+/.rbx
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
