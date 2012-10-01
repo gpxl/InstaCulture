@@ -11,6 +11,7 @@ gem 'haml'
 gem 'json'
 
 gem 'pg'
+gem 'mysql'
 
 # Gems used only for assets and not required
 # in production environments by default.
