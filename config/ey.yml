@@ -25,3 +25,5 @@
 environments:
   Worker_B:
     migrate: false
+  Insta:
+    migrate: false
