@@ -7,6 +7,18 @@
     = csrf_meta_tags
   %body
     .container
-      %h1 culture @engineyard
+      %h1 Culture @EngineYard
       #images.row
         = yield
+      %br
+      %br
+    .navbar.navbar-fixed-bottom
+      .navbar-inner
+        .container
+          %ul.nav
+            %li
+              =link_to 'Join our team', 'http://www.engineyard.com/company/careers/open-positions'
+            %li
+              =link_to 'Help others', 'http://watsi.org'
+            %li
+              =link_to 'View the source', 'https://github.com/gpxl/instaculture'
