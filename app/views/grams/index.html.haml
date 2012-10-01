@@ -1,11 +1,7 @@
-.container
-  %h1 culture @engineyard
-
-  -@venues.each_slice(3) do |slice|
-    .row
-      - slice.each do |data|
-        .span4
-          .well
-            = image_tag data.images.low_resolution.url
-            %small
-              %strong #{data.user.username}
+-@images.each_slice(3) do |slice|
+  - slice.each_with_index do |data,si|
+    = render :partial => 'image_well', :locals => {:data => data}
+  - if (slice.last == @images.last)
+    .span12.next_container
+      .well
+        %h1.center=link_to 'Keep It Going...', root_path(:max_ids => @next_max_ids), :class => 'next_link', :'data-remote' => true

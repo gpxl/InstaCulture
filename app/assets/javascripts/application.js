@@ -13,3 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(document).on('click', '.next_link', function(evt, data, status, xhr){
+  $('.next_link').html('Loading...');
+});
+
+$(document).on('ajax:success', '.next_link', function(evt, data, status, xhr){
+  $('.next_container').remove();
+  $('#images').append(data);
+});
