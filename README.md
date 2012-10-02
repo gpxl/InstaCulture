@@ -1,7 +1,7 @@
 InstaCulture
 =========
 
-Inspired by [spot.io](http://spot.io/ "Spot.io"). This takes a set of Instagram [location ids](http://instagram.com/developer/endpoints/locations/) (currently set in models/venue.rb) and gathers them for cronological display.
+Inspired by [spots.io](http://spots.io/ "Spots.io"). This takes a set of Instagram [location ids](http://instagram.com/developer/endpoints/locations/) (currently set in models/venue.rb) and gathers them for cronological display.
 
 ## Get Started
 
