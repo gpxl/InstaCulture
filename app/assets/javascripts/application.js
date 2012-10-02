@@ -22,3 +22,7 @@ $(document).on('ajax:success', '.next_link', function(evt, data, status, xhr){
   $('.next_container').remove();
   $('#images').append(data);
 });
+
+$(document).on('hidden', '.modal', function () {
+  $(this).removeData('modal');
+});

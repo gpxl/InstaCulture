@@ -1,6 +1,5 @@
 .span4
   .well
-    = image_tag data.images.low_resolution.url
+    = link_to image_tag(data.images.low_resolution.url), gram_path(data.id), :'data-toggle' => "modal", :'data-target' => "#myModal"
     %small
       %strong #{data.user.username}
-

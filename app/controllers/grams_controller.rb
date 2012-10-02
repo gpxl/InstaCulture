@@ -16,4 +16,9 @@ class GramsController < ApplicationController
       format.json { render json: @venues.to_json }
     end
   end
+
+  def show
+    @image = Media.image(params[:id])
+    render :layout => false
+  end
 end
