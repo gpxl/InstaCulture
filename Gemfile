@@ -6,6 +6,12 @@ gem 'rails', '3.2.6'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'instagram'
+gem 'foursquare2'
+gem 'geocoder'
+gem 'hashie'
+gem 'oauth2'
+gem 'httparty'
+
 gem 'haml'
 
 gem 'json'
